@@ -7,10 +7,15 @@ int main() {
 	int n = 0, j = 1; 
 	int *arr = new int[n];
 	cout <<"Введите N: "; cin >> n;
-	for (int i = 0; i < n; i++) {
-		arr[i] = j;
-		j += 2;
-		cout << arr[i] << endl;
+	if (n > 0) {
+		for (int i = 0; i < n; i++) {
+			arr[i] = j;
+			j += 2;
+			cout << arr[i] << endl;
+		}
+	}
+	else {
+		cout << "Введено неверное значение для N!" << endl;
 	}
 	return 0;
 }
