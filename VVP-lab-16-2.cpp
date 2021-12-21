@@ -10,9 +10,15 @@ int main() {
 	cout << "Введите N: "; cin >> n;
 	cout << "Введите A: "; cin >> a;
 	cout << "Введите D: "; cin >> d;
-	for (int i = 0; i < n; i++) {
-		arr[i] = a * pow(d, i);
-		cout << arr[i] << endl;
+	if (n > 1) {
+
+		for (int i = 0; i < n; i++) {
+			arr[i] = a * pow(d, i);
+			cout << arr[i] << endl;
+		}
+	}
+	else {
+		cout << "Введено неверное значение для N!" << endl;
 	}
 	return 0;
 }
