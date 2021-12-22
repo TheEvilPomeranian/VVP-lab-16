@@ -18,7 +18,7 @@ int main() {
 		}
 	}
 	cout << "Все числа с нечетным номером: " << endl;
-	for (i = 0; i < n; i++) {
+	for (i = n; i >= 1; i--) {
 		if (i % 2 != 0) {
 			cout << "arr[" << i << "] = " << arr[i] << endl;
 
